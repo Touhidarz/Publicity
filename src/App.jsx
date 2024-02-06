@@ -1,10 +1,11 @@
-import poster from './assets/AIML.png'
+import poster from './assets/aiml-img.jpg'
 import './App.css'
 
 function App() {
   return (
     <>
       <div className="container">
+        <div className="reg-poster">
         <div className="register">
           <a href="https://forms.gle/SHxHgxk2c3WFKCgF8" className="button">Register Here</a>
           </div>
@@ -12,6 +13,8 @@ function App() {
           <img src={poster} alt="" />
 
         </div>
+        </div>
+        
       </div>
     </>
   )
