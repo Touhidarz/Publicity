@@ -6,21 +6,16 @@
   background-color: black;
 }
 
-
-.poster img{
-  height: 50vw;
-  width: 35vw;
-object-fit: cover;
-display: flex;
-justify-content: center;
-align-items: center;
+.poster img {
+  width: 100%; /* Adjust image width to be responsive */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+  margin-top: 1.5rem;
 }
 
-
-
-/* CSS */
 .button {
-  padding: 0.6em 2em;
+  padding: 0.6em 4em;
+  margin-bottom: 5rem;
   border: none;
   outline: none;
   color: rgb(255, 255, 255);
@@ -84,4 +79,11 @@ align-items: center;
   left: 0;
   top: 0;
   border-radius: 10px;
+}
+
+/* Media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .button {
+    padding: 0.6em 2em; /* Adjust button padding for smaller screens */
+  }
 }
